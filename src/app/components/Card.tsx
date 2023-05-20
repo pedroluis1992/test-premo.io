@@ -10,7 +10,7 @@ const Card = ({ title, description}: ICard) => {
       >
         <p className="text-blue mb-2 text-smx">{title}</p>
         <div className="border-b-4 border-woodsmoke"></div>
-        <p className="text-sm mt-4 h-3/4">{description}</p>
+        <p className="text-sm text-secondary mt-4 h-3/4">{description}</p>
         <div className="text-blue text-smx flex justify-end float-right float-bottom">
           Más info
         </div>

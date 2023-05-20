@@ -10,12 +10,9 @@ module.exports = {
       fontSize: {
         sm: ['14px', '20px'],
         smx: ['14px', '35px'],
-        base: ['16px', '24px'],
+        base: ['25px', '30px'],
         lg: ['36px', '38px'],
         xl: ['57.14px', '60px'],
-      },
-      margin: {
-        '-half-screen': '-50vw',
       },
     },
     textColor: {
@@ -39,6 +36,12 @@ module.exports = {
       'gray': '#D1D1D1',
       'gray-light': '#d3dce6',
     },
+    screens: {
+      'sm': {'min': '320px', 'max': '767px'},
+      'md': {'min': '768px', 'max': '1023px'},
+      'lg': {'min': '1024px', 'max': '1439px'},
+      'xl': {'min': '1440px'},
+    }
   },
   plugins: [],
 }
