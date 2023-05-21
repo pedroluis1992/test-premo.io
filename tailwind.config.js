@@ -10,9 +10,12 @@ module.exports = {
       fontSize: {
         sm: ['14px', '20px'],
         smx: ['14px', '35px'],
+        basex: ['20px', '25px'],
         base: ['25px', '30px'],
         lg: ['36px', '38px'],
+        lgx: ['45px', '48px'],
         xl: ['57.14px', '60px'],
+        xlx: ['62.14px', '64px'],
       },
     },
     textColor: {
@@ -23,7 +26,9 @@ module.exports = {
       white: "white",
       woodsmoke: '#75778C',
       blue: '#005B94',
-      blueDark: '#002F51'
+      blueDark: '#002F51',
+      info: '#0088DF',
+      grayLight: '#7a7979'
     },
     colors: {
       'primary': "#002F51",
@@ -34,7 +39,7 @@ module.exports = {
       'america-silver': '#D1D1D1',
       'woodsmoke': '#75778C',
       'gray': '#D1D1D1',
-      'gray-light': '#d3dce6',
+      'gray-light': '#F1F1F2',
     },
     screens: {
       'sm': {'min': '320px', 'max': '767px'},

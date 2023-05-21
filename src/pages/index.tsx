@@ -4,10 +4,9 @@ import { Star } from "../assets/star";
 import Image from 'next/image';
 import mockData from '../mockData/mockData.json';
 import Card from '../components/Card';
-import logo from '../assets/hero.jpg'; // with import// import "./style.css"
+import image from '../assets/hero.jpg'; // with import// import "./style.css"
 import QuestionItem from '../components/QuestionItem';
 import { useRouter } from 'next/navigation';
-import { AppProps } from 'next/app';
 
 
 const RIGHT = "right";
@@ -31,21 +30,12 @@ export default function Home() {
     }
   };
 
-  const openHandleMenu = () => {
-    setOpenMenu(!openMenu)
-  }
-
   const closeQuestionItem = (id: number) => {
     // setOpenQuestion([{[id]: !openQuestion}])
     setOpenQuestion({
       ...openQuestion,
       [id]: !openQuestion[id]
     })
-  }
-
-  const handleGoPage = (e: any) => {
-    e.preventDefault();
-    router.push('/nosotros');
   }
 
   useEffect(() => {
@@ -68,7 +58,7 @@ export default function Home() {
                   <button className="sm:hidden md:hidden rounded-full bg-terciary text-sm p-2">Contacta a un ejecutivo</button>
               </div>
               <div className="h-4/5 md:h-4/5 lg:h-4/5 xl:h-3/4 2xl:w-3/4 2xl:h-3/4 2xl:mr-0 sm:p-8 md:p-8">
-                <Image alt="imagen-hero" className="h-3/5 w-full self-end" src={logo} />
+                <Image alt="imagen-hero" className="h-3/5 w-full self-end" src={image} />
               </div>
               <div className='flex justify-center'>
                 <button className="lg:hidden xl:hidden text-white rounded-full bg-terciary text-sm p-2">Contacta a un asesor</button>
