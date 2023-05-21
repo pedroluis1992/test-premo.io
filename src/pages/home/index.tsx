@@ -1,19 +1,20 @@
 "use client"; // This is a client component 
 import React, { useEffect, useState } from 'react';
-import { Star } from "./assets/star";
+import { Star } from "../../assets/star";
 import Image from 'next/image';
-import mockData from './mockData/mockData.json';
-import Card from './components/Card';
-import logo from './assets/hero.jpg'; // with import// import "./style.css"
-import QuestionItem from './components/QuestionItem';
+import mockData from '../../mockData/mockData.json';
+import Card from '../../components/Card';
+import logo from '../../assets/hero.jpg'; // with import// import "./style.css"
+import QuestionItem from '../../components/QuestionItem';
+import { useRouter } from 'next/navigation';
+
 
 const RIGHT = "right";
 const LEFT = "left";
 export default function Home() {
-
+  const router = useRouter();
   const [stepScroll, setStepScroll] = useState<number>(0);
   const [openQuestion, setOpenQuestion] = useState<any>({});
-
 
   const moveToScroll = (direction: string) => {
     scrollFun(direction)
@@ -27,8 +28,8 @@ export default function Home() {
     }
   };
 
+
   const closeQuestionItem = (id: number) => {
-    // setOpenQuestion([{[id]: !openQuestion}])
     setOpenQuestion({
       ...openQuestion,
       [id]: !openQuestion[id]
@@ -41,40 +42,8 @@ export default function Home() {
 
   return (
     <>
-      <header>
-        <nav className='flex items-center justify-between flex-wrap bg-white pl-24 pt-6 pr-6 sm:pl-6 md:pl-6 pb-4 border-b border-gray'>
-          <div className="flex items-center mr-14 flex-shrink-0 text-indigo-900 mr-6">
-            <span className="font-semibold text-secondary text-lg tracking-tight">BANK</span>
-            <Star color="#9FC733" />
-          </div>
-          <div className="block lg:hidden xl:hidden">
-            <button className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-              <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg>
-            </button>
-          </div>
-          <div className=" w-full sm:hidden md:hidden  text-indigo-900 block flex-grow lg:flex lg:items-center lg:w-auto">
-            <div className="text-sm text-blue lg:flex-grow">
-              <a href="#responsive-header" className="block mt-4 mr-14 lg:inline-block lg:mt-0 hover:text-blueDark hover:border-b-4 mr-4">
-                Home
-              </a>
-              <a href="#responsive-header" className="block mt-4 mr-14 lg:inline-block lg:mt-0 hover:text-blueDark hover:border-b-4 mr-4">
-                Productos
-              </a>
-              <a href="#responsive-header" className="block mt-4 mr-14 lg:inline-block lg:mt-0 hover:text-blueDark hover:border-b-4 mr-4">
-                Nosotros
-              </a>
-              <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 hover:text-blueDark hover:border-b-4 ">
-                Precios
-              </a>
-            </div>
-            <div>
-              <a href="#" className="text-smx px-4 py-2 bg-blue rounded-lg text-white">Acceder</a>
-            </div>
-          </div>
-        </nav>
-      </header>
       <body>
-        <section className="w-full h-screen bg-primary pb-24" >
+        <div className="w-full h-screen bg-primary pb-24" >
           <div className="w-full xl:h-2/5 lg:h-2/5 sm:h-3/4 rounded-bl-[10000px] rounded-br-full bg-white mt-[2%]">
             <div className="lg:gap-8 lg:columns-2 xl:gap-8 xl:columns-2" >
               <div className="h-4/5 lg:pl-40 xl:40 md:pl-8 sm:pl-8 pt-16  content-center">
@@ -101,9 +70,9 @@ export default function Home() {
               Crédito PyME, inversión, paneles solares
             </p>
           </div>
-        </section>
+        </div>
 
-        <section className="w-full h-full bg-primary sm:pt-16 md:pt-16 pl-16 pr-16">
+        <div className="w-full h-full bg-primary sm:pt-16 md:pt-16 pl-16 pr-16">
           <p className="text-lg  flex justify-start text-terciary">Liquidez inmediata</p>
           <div className="flex">
             <p className="text-lg flex justify-start text-terciary mr-2">para tu </p> <p className="text-lg  flex justify-start text-textContrast">negocio.</p>
@@ -132,14 +101,14 @@ export default function Home() {
               {
                 mockData.credits.map((credit) => {
                   return (
-                    <Card title={credit.title} description={credit.description} />
+                    <Card key={credit.id} title={credit.title} description={credit.description} />
                   )
                 })
               }
             </ul>
           </div>
-        </section>
-        <section className="w-full h-full bg-american-silver pl-16 pr-16 pt-10 pb-26">
+        </div>
+        <div className="w-full h-full bg-american-silver pl-16 pr-16 pt-10 pb-26">
           <p className='flex justify-center text-lg sm:text-base font-semibold text-secondary'>Preguntas frecuentes</p>
           <p className='mt-6 text-sm text-justify	pl-28 pr-28 sm:pl-2 sm:pr-2 md:pl-2 md:pr-2 text-secondary'>Tenemos a tu disposición toda la información que necesitas conocer, así como también sobre el proceso de facturación y pagos. Además, nuestro equipo de atención al cliente está disponible para brindarte asesoramiento y resolver cualquier duda que puedas tener al respecto</p>
           {
@@ -149,8 +118,8 @@ export default function Home() {
               )
             })
           }
-        </section>
-        <section className="w-full h-ful bg-white pl-24 sm:pl-8 md:pl-8 pr-8 pt-8 pb-16">
+        </div>
+        <div className="w-full h-ful bg-white pl-24 sm:pl-8 md:pl-8 pr-8 pt-8 pb-16">
           <div className='flex items-center justify-between flex-wrap bg-white'>
             <div className="flex items-center flex-shrink-0 text-indigo-900 mr-6">
               <span className="font-semibold text-secondary text-lg tracking-tight">BANK</span>
@@ -265,7 +234,7 @@ export default function Home() {
               <div className="w-10 h-10 bg-blue mr-2 rounded-full"></div>
             </div>
           </div>
-        </section>
+        </div>
       </body>
     </>
   )
