@@ -1,0 +1,72 @@
+{
+  "credits":[
+    {
+      "id":1,
+      "title": "CREDITO1",
+      "description": "Es la solución ideal para tu negocio en crecimiento. Paga deudas, invierte y paga a proveedores al contado. Disponibles más fondos mientras el contrato esté vigente. ¡Solicítalo ahora!",
+      "icon": ""
+    },
+    {
+      "id":2,
+      "title": "CREDITO2",
+      "description": "Es el crédito ideal para tu negocio, con él, puedes obtener capital de trabajo para pagar deudas, hacer inversiones y pagar a proveedores al contado y su pago mensual simple te permite manejarlo fácilmente. ¡Solicítalo ahora!",
+      "icon": ""
+    },
+    {
+      "id":3,
+      "title": "CREDITO3",
+      "description": "Si te dedicas al desarrollo inmobiliario el crédito es ideal para ti. Financia tus proyectos de construcción de vivienda con este crédito diseñado especialmente para empresas del sector. ¡Solicítalo ahora y haz realidad tus proyectos inmobiliarios!",
+      "icon": ""
+    },
+    {
+      "id":4,
+      "title": "CREDITO4",
+      "description": "Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+      "icon": ""
+    },
+    {
+      "id":5,
+      "title": "CREDITO5",
+      "description": "Es la solución ideal para tu negocio en crecimiento. Paga deudas, invierte y paga a proveedores al contado. Disponibles más fondos mientras el contrato esté vigente. ¡Solicítalo ahora!",
+      "icon": ""
+    },
+    {
+      "id":6,
+      "title": "CREDITO6",
+      "description": "Es la solución ideal para tu negocio en crecimiento. Paga deudas, invierte y paga a proveedores al contado. Disponibles más fondos mientras el contrato esté vigente. ¡Solicítalo ahora!",
+      "icon": ""
+    }
+  ],
+  "frecuentlyQuestions":[
+    {
+      "id": 1,
+      "title": "¿Qué productos ofrecen?",
+      "description": "Actualmente, en nuestro portafolio de productos financieros ofrecemos diferentes opciones que se adaptan a las necesidades de nuestros clientes, entre ellas se encuentran: CREDITO1, CREDITO2, CREDITO3, CREDITO4, y CREDITO5. Cada uno de estos productos está diseñado para brindar opciones de financiamiento accesibles y adecuadas para cada situación financiera."
+    },
+    {
+      "id": 2,
+      "title": "Tiempo estimado para aprobación de crédito solicitado.",
+      "description": "Nuestro tiempo de respuesta habitual es de 48 horas para asegurarnos de brindar una atención de calidad y cuidadosa en cada una de las solicitudes que recibimos."
+    },
+    {
+      "id": 3,
+      "title": "¿Cuál es el plazo estipulado de mi crédito?",
+      "description": "Ofrecemos opciones de crédito con plazos flexibles de hasta 60 meses para que puedas elegir el plan de pago que mejor se adapte a tus necesidades financieras."
+    },
+    {
+      "id": 4,
+      "title": "¿Existen costos ocultos asociados a la solicitud de crédito?",
+      "description": "Queremos brindarte tranquilidad financiera, por eso no realizamos ningún tipo de cobro ni solicitamos pagos por adelantado en ninguna etapa del proceso de solicitud de crédito."
+    },
+    {
+      "id": 5,
+      "title": "¿Cuánto tiempo lleva operando PREMO?",
+      "description": "Somos una Institución Financiera con una trayectoria con más de 10 años en el mercado, lo que nos permite ofrecerte no solo respaldo, sino también un asesoramiento experto en todo momento para que puedas tomar la mejor decisión financiera."
+    },
+    {
+      "id": 6,
+      "title": "¿La tasa de interés ofrecida es fija o variable?",
+      "description": "Para brindarte estabilidad financiera, te ofrecemos una tasa de interés fija que se mantendrá invariable durante todo el plazo de financiamiento, lo que significa que podrás tener un mejor control sobre tus pagos mensuales y presupuestar de manera más efectiva."
+    }
+  ]
+}
