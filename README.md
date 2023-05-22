@@ -1,6 +1,23 @@
+## About the project
+
+Is a web project with two pages, home and "nosotros", the web page is about of bank
+
+![image description](./src//assets/imagetest.png)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+Built With
+This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+
+Next
+React
+Tailwind
+
 ## Getting Started
+
+Prerequisites
+  Node 
+  suggestion version v18.15.0
 
 First, run the development server:
 
