@@ -15,6 +15,7 @@ const NavBar = () => {
 
   const handleGoPage = (e: any, path: string) => {
     e.preventDefault();
+    setOpenMenu(!openMenu)
     router.push(`/${path}`);
   }
 

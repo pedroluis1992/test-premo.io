@@ -1,6 +1,5 @@
 "use client"; // This is a client component 
 import React, { useEffect, useState } from 'react';
-import { Star } from "../assets/star";
 import Image from 'next/image';
 import mockData from '../mockData/mockData.json';
 import Card from '../components/Card';
@@ -45,7 +44,7 @@ export default function Home() {
   return (
     <>
         <div className="w-full h-screen bg-primary pb-24" >
-          <div className="w-full xl:h-2/5 lg:h-2/5 sm:h-3/4 rounded-bl-[10000px] rounded-br-full bg-white mt-[2%]">
+          <div className="w-full xl:h-1/2 lg:h-1/2 sm:h-3/4 rounded-bl-[10000px] rounded-br-full bg-white mt-[2%]">
             <div className="lg:gap-8 lg:columns-2 xl:gap-8 xl:columns-2" >
               <div className="h-4/5 lg:pl-40 xl:40 md:pl-8 sm:pl-8 pt-16  content-center">
                 <div className="justify-center text-secondary font-semibold text-xl">
